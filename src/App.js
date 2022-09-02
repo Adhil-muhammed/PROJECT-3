@@ -1,34 +1,29 @@
-import About from "./Component/About";
-import Profile from "./Component/Profile";
-import{useState} from 'react'
-import {Route,Routes,Link,useNavigate} from 'react-router-dom'
-import {Appcontext} from './Appcontext'
-
+import Home from "./Component/Home/Home";
+import React, { useEffect, useContext } from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+import FadeCard from "./Component/FadeCard/FadeCard";
+import Signup from "./Component/Signup/Signup";
+import { PassContext } from "./Component/CreateContext/context";
 function App() {
-  const [state,setState]=useState('hi it is me JARVIS')
-  const navigate=useNavigate()
-
-  
-
-
+  const { setData ,data} = useContext(PassContext);
+  useEffect(() => {
+    
+console.log(data)
+  }, []);
   return (
-   <div>
     <div>
-    <Link to='/a'>About page</Link>
-    <Link to='/p'>Profile page</Link>
+      <BrowserRouter>
+        <Route exact path={"/"}>
+          <Home />
+        </Route>
+        <Route path={"/card"}>
+          <FadeCard />
+        </Route>
+        <Route path={"/singup"}>
+          <Signup />
+        </Route>
+      </BrowserRouter>
     </div>
-    <div>
-    <button onClick={()=>navigate('/a')} >About</button>
-    <button onClick={()=>navigate('/p')} >profile</button>
-    </div>
-    <Appcontext.Provider value={{data:state}}>
-      <Routes>
-      <Route  exact path='/a' 
-      element={<About/>} />
-      <Route  exact path='/p' element={<Profile/>} />
-      </Routes>
-      </Appcontext.Provider>
-   </div>
   );
 }
 export default App;
