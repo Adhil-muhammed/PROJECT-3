@@ -12,7 +12,7 @@ function Nevbar() {
   const {data}=useContext(PassContext)
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark" >
         <Container>
           <Navbar.Brand as={Link} to="/">HOME</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

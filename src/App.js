@@ -4,11 +4,11 @@ import { BrowserRouter, Route } from "react-router-dom";
 import FadeCard from "./Component/FadeCard/FadeCard";
 import Signup from "./Component/Signup/Signup";
 import { PassContext } from "./Component/CreateContext/context";
+import Login from "./Component/Login/Login";
 function App() {
-  const { setData ,data} = useContext(PassContext);
+  const { setData, data } = useContext(PassContext);
   useEffect(() => {
-    
-console.log(data)
+    console.log(data);
   }, []);
   return (
     <div>
@@ -21,6 +21,9 @@ console.log(data)
         </Route>
         <Route path={"/singup"}>
           <Signup />
+        </Route>
+        <Route path={"/login"}>
+          <Login/>
         </Route>
       </BrowserRouter>
     </div>

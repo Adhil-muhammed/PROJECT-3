@@ -2,3 +2,7 @@
     display: flex;
     justify-content: center;
 }
+.rowCard{
+    display: flex;
+    flex-direction:row;
+  }
