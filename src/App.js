@@ -4,12 +4,17 @@ import { BrowserRouter, Route } from "react-router-dom";
 import FadeCard from "./Component/FadeCard/FadeCard";
 import Signup from "./Component/Signup/Signup";
 import { PassContext } from "./Component/CreateContext/context";
+import { Signcontext } from "./Component/CreateContext/context";
 import Login from "./Component/Login/Login";
+import 'firebase/auth'
 function App() {
-  const { setData, data } = useContext(PassContext);
+  const { setData } = useContext(PassContext);
+  const { firebase } = useContext(Signcontext);
   useEffect(() => {
-    console.log(data);
-  }, []);
+    firebase.auth().onAuthStateChanged((user) => {
+      setData(user);
+    });
+  });
   return (
     <div>
       <BrowserRouter>
@@ -23,7 +28,7 @@ function App() {
           <Signup />
         </Route>
         <Route path={"/login"}>
-          <Login/>
+          <Login />
         </Route>
       </BrowserRouter>
     </div>

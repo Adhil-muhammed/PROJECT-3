@@ -33,6 +33,12 @@ function Signup() {
               Password: password,
             })
             .then(() => {
+              console.log("added");
+            })
+            .then(() => {
+              alert("Signed...");
+            })
+            .then(() => {
               history.push("/login");
             });
         });

@@ -1,21 +1,27 @@
 import React from "react";
-import "./Banner.css";
 import Card from "react-bootstrap/Card";
-// import Button from "react-bootstrap/Button";
+
+import "./Banner.css";
+import Button from "react-bootstrap/Button";
 function Banner() {
   return (
     <div className="Banner">
       <Card className="bg-dark text-white">
         <Card.Img
-          src="https://wallpaperaccess.com/full/2416004.jpg"
-          variant="top"
-          style={{ height: "30rem" }}
+          src="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"
+          alt="Card image"
         />
         <Card.ImgOverlay className="ImgOverlay1">
+          <div className="disbox">
+            <div className="button">
+              <Button variant="danger"> About me</Button>
+              </div>
+              </div>
+            
+          
           <Card.Title>Card title</Card.Title>
-          <Card.Img className="insideimage" src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          style={{width:"500px"}}
-          />
+            <div className="discription">Adhil Muhammed</div>
+
           <div className="ImgOverlay">
             <Card.Text className="text"></Card.Text>
           </div>

@@ -10,14 +10,34 @@ body {
 
   justify-content: center;
 }
-.text{
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    font-weight: 900;
-    font-display: calc();
-    right: 0;
+.text {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  font-display: calc();
+  right: 0;
 }
-.insideimage{
+.insideimage {
   margin-left: 28rem;
+}
+.disbox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.discription {
+  align-items: center;
+}
+.discription {
+  display: flex;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  justify-content: center;
+  
+
+}
+.button{
+  border:none;
 }
