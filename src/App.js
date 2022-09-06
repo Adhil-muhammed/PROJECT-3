@@ -6,7 +6,7 @@ import Signup from "./Component/Signup/Signup";
 import { PassContext } from "./Component/CreateContext/context";
 import { Signcontext } from "./Component/CreateContext/context";
 import Login from "./Component/Login/Login";
-import 'firebase/auth'
+import "firebase/auth";
 function App() {
   const { setData } = useContext(PassContext);
   const { firebase } = useContext(Signcontext);
