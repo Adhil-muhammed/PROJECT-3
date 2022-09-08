@@ -21,9 +21,9 @@ function App() {
         <Route exact path={"/"}>
           <Home />
         </Route>
-        <Route path={"/card"}>
+        {/* <Route path={"/card"}>
           <FadeCard />
-        </Route>
+        </Route> */}
         <Route path={"/singup"}>
           <Signup />
         </Route>

@@ -1,0 +1,8 @@
+.Fadecard {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  
+}
+.Fadecard::-webkit-scrollbar{
+  display:none ;
+}

@@ -1,8 +1,17 @@
-.body{
-    margin: 0px;
+.body {
+  margin: 0px;
+  padding: 0;
 }
-.Formgroup{
-    font-size: 900;
-    margin-left: 29rem;
-    margin-top: 8rem;
+.Formgroup {
+  font-size: 900;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
 }
+.btnn {
+  display: flex;
+  justify-content: center;
+}
+.btnn:hover{
+    background-color: black;
+}   

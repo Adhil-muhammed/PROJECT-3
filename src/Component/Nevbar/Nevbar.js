@@ -39,7 +39,7 @@ function Nevbar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/card">
+              <Nav.Link as={Link} to="/card">                                    
                 Cards
               </Nav.Link>
               <Nav.Link as={Link} to="/login">

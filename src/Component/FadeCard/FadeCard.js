@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/esm/Button";
 import axios from "axios";
+import "./FadeCard.css"
 import { useHistory } from "react-router-dom";
 function FadeCard() {
   const [item, setItem] = useState([]);
@@ -21,11 +22,13 @@ function FadeCard() {
   console.log(item);
   return (
     <div>
-      <Row xs={2} md={5} className="g-4">
+      <div className="CardsRow">
+
+      {/* <Row xs={2} md={5} className="g-4"> */}
         {item?.results?.map((obj) => (
-          <Col>
-            <Card>
-              <Card.Img variant="top" src={obj.image} />
+          <Col   >
+            <Card style={{width:"18rem"}}>
+              <Card.Img variant="top" src={obj.image} style={{width:"18rem"}} />
               <Card.Body>
                 <Card.Title>{obj.name}</Card.Title>
                 <Card.Text>
@@ -38,11 +41,15 @@ function FadeCard() {
             
           </Col>
         ))}
-      </Row>
+      {/* </Row> */}
+        </div>
+        <div className="bttn">
+
       <Button variant="primary" onClick={ReturnHome}>
         {" "}
         click me
       </Button>
+        </div>
     </div>
   );
 }

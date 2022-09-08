@@ -7,10 +7,13 @@ function Banner() {
   return (
     <div className="Banner">
       <Card className="bg-dark text-white">
-        <Card.Img
+        <div className="bannerimage">
+
+        <Card.Img className="bannerimage"
           src="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"
           alt="Card image"
-        />
+          />
+          </div>
         <Card.ImgOverlay className="ImgOverlay1">
           <div className="disbox">
             <div className="button">

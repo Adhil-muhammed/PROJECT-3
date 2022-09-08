@@ -2,7 +2,17 @@
     display: flex;
     justify-content: center;
 }
-.rowCard{
+.CardsRow{
+    margin: 1rem;
     display: flex;
-    flex-direction:row;
+
+
+  }
+  .bttn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    
+    
   }
