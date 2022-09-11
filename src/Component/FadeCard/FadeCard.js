@@ -21,7 +21,7 @@ function FadeCard() {
     histoey.push("/");
   };
 const action=10
-  console.log(item);
+  
   return (
     <div className="main">
       <div className="FadeCardDidcription">

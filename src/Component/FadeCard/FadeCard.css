@@ -1,8 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-h1{
+h1 {
   margin: 0;
   padding: 0;
 }
@@ -15,11 +15,10 @@ h1{
   margin: 1rem;
   overflow-x: scroll;
   overflow-y: hidden;
-  margin-top:2rem ;
-  margin-right:2rem ;
+  margin-top: 2rem;
+  margin-right: 2rem;
   margin-left: 2rem;
   padding-bottom: 2rem;
-  
 }
 .CardsRow::-webkit-scrollbar {
   display: none;
@@ -30,7 +29,7 @@ h1{
   align-items: center;
   position: fixed;
 }
-.FadeCardDidcription{
+.FadeCardDidcription {
   margin-top: 3rem;
   display: flex;
   justify-content: center;
@@ -38,8 +37,9 @@ h1{
   color: white;
   padding-top: 2rem;
 }
-.main{
+.main {
   background-color: black;
-}.CardImgeLink{
+}
+.CardImgeLink {
   text-decoration: none;
 }

@@ -10,13 +10,13 @@ function Detailse() {
     axios.get("https://rickandmortyapi.com/api/character").then((response) => {
       const item = response?.data?.results?.find(
         (userItem) => userItem.id === parseInt(Userid)
-      );
-      setUser(item);
-      console.log(item);
-    });
-  }, [Userid]);
-  return (
-    <div className="Detsils">
+        );
+        setUser(item);
+        
+      });
+    }, [Userid]);
+    return (
+      <div className="Detsils">
       <div className="cardtls">
 
       <h2>{`iam:${user.name} `}</h2>

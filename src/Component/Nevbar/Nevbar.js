@@ -42,7 +42,7 @@ function Nevbar() {
                 Cards
               </Nav.Link>
               <Nav.Link as={Link} to="/login">
-                Pricing
+                Login
               </Nav.Link>
               <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Services</NavDropdown.Item>
@@ -53,8 +53,8 @@ function Nevbar() {
                  Health_insurence
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Our_Team
+                <NavDropdown.Item as={Link} to="/testing">
+                  APi testing
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
