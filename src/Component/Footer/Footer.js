@@ -1,6 +1,6 @@
 import React from "react";
-import "./Footer.css"
-import {Link} from "react-router-dom"
+import "./Footer.css";
+import { Link } from "react-router-dom";
 
 import { CDBFooter, CDBFooterLink, CDBBox, CDBBtn, CDBIcon } from "cdbreact";
 
@@ -16,8 +16,12 @@ function Footer() {
         <CDBBox display="flex" justifyContent="between" className="flex-wrap">
           <CDBBox>
             <a href="/" className="d-flex align-items-center p-0 text-dark">
-              <img alt="logo" src="logo" width="30px" />
-              <span className="ml-3 h5 font-weight-bold">Devwares</span>
+              <img
+                alt="logo"
+                src="https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?compress=1&resize=450x338&vertical=top"
+                width="30px"
+              />
+              <span className="ml-3 h5 font-weight-bold">for Care</span>
             </a>
             <p className="my-3" style={{ width: "250px" }}>
               We are creating High Quality Resources and tools to Aid developers
@@ -37,7 +41,7 @@ function Footer() {
           </CDBBox>
           <CDBBox>
             <p className="h5 mb-4" style={{ fontWeight: "600" }}>
-              Devwares
+              for Care
             </p>
             <CDBBox flex="column" style={{ cursor: "pointer", padding: "0" }}>
               <CDBFooterLink href="/">Resources</CDBFooterLink>
@@ -53,7 +57,9 @@ function Footer() {
             <CDBBox flex="column" style={{ cursor: "pointer", padding: "0" }}>
               <CDBFooterLink href="/">Support</CDBFooterLink>
               <CDBFooterLink href="/">Sign Up</CDBFooterLink>
-              <CDBFooterLink as={Link} to="/singup" >Sign In</CDBFooterLink>
+              <CDBFooterLink as={Link} to="/singup">
+                Sign In
+              </CDBFooterLink>
             </CDBBox>
           </CDBBox>
           <CDBBox>

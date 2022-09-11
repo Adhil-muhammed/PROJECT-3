@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.soul {
+    width: 100%;
+    height: auto;
+
+}
+.soulImages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 238%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    width: 265px;
+    
+}
+
+.soulDiscription {
+    position: absolute;
+    top: 215%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    max-width: 436px;
+    animation: 800ms ease-in-out 0s 1 normal forwards running imvdep;
+    font-family: sans-serif;
+}
+.Image{
+    width: 328px;
+
+}
+.discription{
+    color: white;
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+.SlidCard{
+    width: 100%;
+    height: auto;
+}
+.Carousel{
+    height: 600px;
+    pointer-events: stroke;
+}
+

@@ -1,18 +1,45 @@
-.homebtn{
-    display: flex;
-    justify-content: center;
+*{
+  margin: 0;
+  padding: 0;
 }
-.CardsRow{
-    margin: 1rem;
-    display: flex;
-
-
-  }
-  .bttn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    
-    
-  }
+h1{
+  margin: 0;
+  padding: 0;
+}
+.homebtn {
+  display: flex;
+  justify-content: center;
+}
+.CardsRow {
+  display: flex;
+  margin: 1rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-top:2rem ;
+  margin-right:2rem ;
+  margin-left: 2rem;
+  padding-bottom: 2rem;
+  
+}
+.CardsRow::-webkit-scrollbar {
+  display: none;
+}
+.bttn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.FadeCardDidcription{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  font-family: Tahoma;
+  color: white;
+  padding-top: 2rem;
+}
+.main{
+  background-color: black;
+}.CardImgeLink{
+  text-decoration: none;
+}

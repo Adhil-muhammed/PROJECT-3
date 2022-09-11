@@ -1,12 +1,13 @@
 import Home from "./Component/Home/Home";
 import React, { useEffect, useContext } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import FadeCard from "./Component/FadeCard/FadeCard";
+// import FadeCard from "./Component/FadeCard/FadeCard";
 import Signup from "./Component/Signup/Signup";
 import { PassContext } from "./Component/CreateContext/context";
 import { Signcontext } from "./Component/CreateContext/context";
 import Login from "./Component/Login/Login";
 import "firebase/auth";
+import Detailse from "./Component/Details/Detailse";
 function App() {
   const { setData } = useContext(PassContext);
   const { firebase } = useContext(Signcontext);
@@ -28,8 +29,12 @@ function App() {
           <Signup />
         </Route>
         <Route path={"/login"}>
-          <Login />
+          <Login/>
         </Route>
+        <Route path={"/details/:Userid"}>
+          <Detailse/>
+        </Route>
+        
       </BrowserRouter>
     </div>
   );

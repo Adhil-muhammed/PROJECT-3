@@ -25,12 +25,11 @@ function Nevbar() {
   return (
     <div>
       <Navbar
+        className="Nevbox"
         fixed="top"
         collapseOnSelect
         expand="lg"
-        bg="dark"
-        variant="dark"
-        className="nevbox"
+        variant=""
       >
         <Container>
           <Navbar.Brand as={Link} to="/">
@@ -39,23 +38,23 @@ function Nevbar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/card">                                    
+              <Nav.Link as={Link} to="/card">
                 Cards
               </Nav.Link>
               <Nav.Link as={Link} to="/login">
                 Pricing
               </Nav.Link>
               <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">Services</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
-                  Another action
+                  MediCare
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">
-                  Something
+                 Health_insurence
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
-                  Separated link
+                  Our_Team
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
@@ -66,7 +65,7 @@ function Nevbar() {
               <Nav.Link>
                 {data ? `Welcome Mr:${data.displayName}` : " "}
               </Nav.Link>
-              <Nav.Link as={Button} variant="dark" onClick={Loginhandler}>
+              <Nav.Link as={Link} variant="dark" onClick={Loginhandler}>
                 Log Out
               </Nav.Link>
             </Nav>

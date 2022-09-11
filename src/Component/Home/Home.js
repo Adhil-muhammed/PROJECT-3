@@ -1,4 +1,5 @@
 import React from "react";
+import MiddlePage from "../../MiddlePage/MiddlePage";
 import Banner from "../Banner/Banner";
 import FadeCard from "../FadeCard/FadeCard";
 import Footer from "../Footer/Footer";
@@ -9,9 +10,8 @@ function Home() {
     <div>
       <Nevbar />
       <Banner />
-      <div className="Fadecard">
-        <FadeCard />
-      </div>
+      <FadeCard />
+      <MiddlePage/>
       <Footer />
     </div>
   );

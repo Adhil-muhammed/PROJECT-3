@@ -1,0 +1,20 @@
+.Detsils{
+   
+    /* background-color: black; */
+    color: black;
+    height: 100vh;
+    width: 100%;
+    
+}
+.cardtls{
+    
+    position: absolute;
+    top: 11%;
+    left: 40%;
+;
+    
+}
+.Detsils{
+    background-image: url("https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000");
+    height: 100vh;
+}
