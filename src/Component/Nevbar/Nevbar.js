@@ -41,16 +41,19 @@ function Nevbar() {
               <Nav.Link as={Link} to="/card">
                 Cards
               </Nav.Link>
+{/* *********************************************************** */}
+              <Nav.Link as={Link} to="/booking">
+                Booking
+              </Nav.Link>
+{/* *************************************************************8 */}
               <Nav.Link as={Link} to="/login">
                 Login
               </Nav.Link>
               <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Services</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  MediCare
-                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">MediCare</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">
-                 Health_insurence
+                  Health_insurence
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={Link} to="/testing">

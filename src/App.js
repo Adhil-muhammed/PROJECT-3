@@ -10,6 +10,8 @@ import "firebase/auth";
 import Detailse from "./Component/Details/Detailse";
 import TestingApi from "./Component/TestingApi/TestingApi";
 import TestingApiDetails from "./Component/TestingApi/TestingApiDetails";
+import DateAndTime from "./Component/DateAndTime/DateAndTime";
+
 function App() {
   const { setData } = useContext(PassContext);
   const { firebase } = useContext(Signcontext);
@@ -40,9 +42,14 @@ function App() {
           <TestingApi />
         </Route>
         <Route path={"/apiDetails/:apiId"}>
-          <TestingApiDetails/>
+          <TestingApiDetails />
         </Route>
+        <Route path={"/booking"}>
+          <DateAndTime />
+        </Route>
+      
       </BrowserRouter>
+     
     </div>
   );
 }
