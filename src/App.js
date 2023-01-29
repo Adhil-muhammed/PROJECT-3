@@ -1,6 +1,6 @@
 import Home from "./Component/Home/Home";
 import React, { useEffect, useContext } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 // import FadeCard from "./Component/FadeCard/FadeCard";
 import Signup from "./Component/Signup/Signup";
 import { PassContext } from "./Component/CreateContext/context";
@@ -22,7 +22,7 @@ function App() {
   });
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <Route exact path={"/"}>
           <Home />
         </Route>
@@ -47,9 +47,7 @@ function App() {
         <Route path={"/booking"}>
           <DateAndTime />
         </Route>
-      
-      </BrowserRouter>
-     
+      </Router>
     </div>
   );
 }
